@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//import { ReactDOM } from "react";
+//import CompA from "./CompA";
+//import Message from "./Message";
+//import Counter from "./Counter/Counter";
+//import Product from "./FtoC/Product";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Navbar from "./FtoC/Navbar/Navbar"
+//import States1 from "./FtoC/States1";
+//import ProdList from "./ListRendering/ProdList";
+//import Test from "./ListRendering/Test";
+//import Login from "./Forms/Login";
+import Register from "./Forms/Register";
+
+function App()
+{
+    return <div>
+        <Navbar/>
+     <Register/>
+     
     </div>
-  );
+    
 }
-
-export default App;
+export default App
