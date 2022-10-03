@@ -1,24 +1,25 @@
-import React from "react";
-//import { ReactDOM } from "react";
-//import CompA from "./CompA";
-//import Message from "./Message";
-//import Counter from "./Counter/Counter";
-//import Product from "./FtoC/Product";
+import React, { Component } from 'react'
+//import Employee from './Axios/Employee'
+//import User from './Axios/User'
+import Navv from './ReactHooks/Navv'
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom'
+import Msg from './ReactHooks/Msg'
 
-import Navbar from "./FtoC/Navbar/Navbar"
-//import States1 from "./FtoC/States1";
-//import ProdList from "./ListRendering/ProdList";
-//import Test from "./ListRendering/Test";
-//import Login from "./Forms/Login";
-import Register from "./Forms/Register";
-
-function App()
-{
-    return <div>
-        <Navbar/>
-     <Register/>
-     
-    </div>
-    
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Router>
+      <Navv/>
+      <Switch>
+        <Route path='/Msg' component={Msg}/>
+        
+      </Switch>
+       
+      </Router>
+      </div>
+    )
+  }
 }
+
 export default App
